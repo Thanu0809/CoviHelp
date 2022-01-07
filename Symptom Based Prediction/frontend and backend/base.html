@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID PREDICTION</title>
+
+</head>
+<body style="background-color:#ffffe6;">
+<center>
+<h1 style="color: #000033;">COVID PREDICTION</h1>
+<form action="{{url_for('predict')}}" method='POST'>
+    Breathing Problem:&nbsp<input type="text" name="brp"><br><br>
+    Fever:&nbsp<input type="number" name="fever"><br><br>
+    Dry Cough:&nbsp<input type="number" name="dry"><br><br>
+    Sore Throat:&nbsp<input type="number" name="sore"><br><br>
+    Running Nose:&nbsp<input type="number" name="rn"><br><br>
+    Asthma:&nbsp<input type="number" name="ast"><br><br>
+    Headache:&nbsp<input type="number" name="hde"><br><br>
+    Abroad Travel:&nbsp<input type="number" name="abrd"><br><br>
+    Contact With Covid Patient:&nbsp<input type="number" name="contact"><br><br>
+    Attended Large gathering:&nbsp<input type="number" name="largeg"><br><br>
+    Visited Public exposed Places:&nbsp<input type="number" name="visit"><br><br>
+    Family working in Exposed Places:&nbsp<input type="number" name="work"><br><br>
+    <input type="submit" value="CHECK COVID">
+
+
+</form>
+
+  {{ prediction_text }}
+    </center>
+</body>
+</html>
